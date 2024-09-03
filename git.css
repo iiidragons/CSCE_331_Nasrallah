@@ -1,0 +1,188 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+}
+
+/* Header and Hero Section */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('images/banner.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Positions the icon in the top left corner with a little padding from the edges */
+    width: 24px;
+    height: 24px;
+    /* Adjust the size of the icon */
+    z-index: 1000;
+    /* Ensures the icon is on top of other elements */
+}
+
+.home-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ensures the image scales correctly inside the icon container */
+}
+.hero {
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.intro-text {
+    width: 50%;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.intro-image {
+    width: 40%;
+    text-align: center;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #0e0e0e;
+    color: white;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00d4ff;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+}
+
+.project-card img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.project-info {
+    text-align: left;
+    width: 60%;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00d4ff;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.btn {
+    background-color: #00d4ff;
+    color: #0e0e0e;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #0e0e0e;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}
